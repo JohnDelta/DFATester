@@ -12,9 +12,6 @@ namespace NFAtester
         private List<string> finalState;
         private List<Transition> transitions;
 
-        // Keep all possible states of NFA
-        private List<string> possibleStates;
-
         // Keep current state of NFA
         private string currentState;
 
@@ -25,7 +22,6 @@ namespace NFAtester
             this.initialState = initialState;
             this.finalState = finalState;
             this.transitions = transitions;
-            possibleStates = new List<string>();
         }
 
         private bool SearchInAlphabet(string letter)
@@ -51,7 +47,7 @@ namespace NFAtester
             foreach (Transition transition in transitions)
             {
 
-                if (transition.currentState == currentState && transition.letter == letter.ToString())
+                if (transition.currentState == currentState && transition.letter == letter)
                 {
                     nextState = transition.nextState;
                     break;
@@ -82,6 +78,7 @@ namespace NFAtester
                     allLettersPassed = false;
                 }
             }
+            if (string.IsNullOrEmpty(input)) allLettersPassed = false;
 
             // Check if the last state is a final state and for all letters there was a transition
             foreach(string state in finalState)
