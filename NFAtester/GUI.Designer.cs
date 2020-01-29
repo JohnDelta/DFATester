@@ -1,6 +1,6 @@
 ﻿namespace NFAtester
 {
-    partial class NFAtesterForm
+    partial class DFAtesterForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.NFAParametersGroupBox = new System.Windows.Forms.GroupBox();
+            this.DFAParametersGroupBox = new System.Windows.Forms.GroupBox();
             this.transitionTextBox = new System.Windows.Forms.TextBox();
             this.transitionLabel = new System.Windows.Forms.Label();
             this.finalStateTextBox = new System.Windows.Forms.TextBox();
@@ -45,30 +45,30 @@
             this.testInputLabel = new System.Windows.Forms.Label();
             this.ResultGroupBox = new System.Windows.Forms.GroupBox();
             this.resultLabel = new System.Windows.Forms.Label();
-            this.NFAParametersGroupBox.SuspendLayout();
+            this.DFAParametersGroupBox.SuspendLayout();
             this.TestInputGroupBox.SuspendLayout();
             this.ResultGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // NFAParametersGroupBox
+            // DFAParametersGroupBox
             // 
-            this.NFAParametersGroupBox.Controls.Add(this.transitionTextBox);
-            this.NFAParametersGroupBox.Controls.Add(this.transitionLabel);
-            this.NFAParametersGroupBox.Controls.Add(this.finalStateTextBox);
-            this.NFAParametersGroupBox.Controls.Add(this.finalStateLabel);
-            this.NFAParametersGroupBox.Controls.Add(this.initialStateTextBox);
-            this.NFAParametersGroupBox.Controls.Add(this.initialStateLabel);
-            this.NFAParametersGroupBox.Controls.Add(this.alphabetTextBox);
-            this.NFAParametersGroupBox.Controls.Add(this.alphabetLabel);
-            this.NFAParametersGroupBox.Controls.Add(this.numberOfStatesTextBox);
-            this.NFAParametersGroupBox.Controls.Add(this.numberOfStatesLabel);
-            this.NFAParametersGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NFAParametersGroupBox.Location = new System.Drawing.Point(12, 12);
-            this.NFAParametersGroupBox.Name = "NFAParametersGroupBox";
-            this.NFAParametersGroupBox.Size = new System.Drawing.Size(243, 477);
-            this.NFAParametersGroupBox.TabIndex = 0;
-            this.NFAParametersGroupBox.TabStop = false;
-            this.NFAParametersGroupBox.Text = "NFA Parameters";
+            this.DFAParametersGroupBox.Controls.Add(this.transitionTextBox);
+            this.DFAParametersGroupBox.Controls.Add(this.transitionLabel);
+            this.DFAParametersGroupBox.Controls.Add(this.finalStateTextBox);
+            this.DFAParametersGroupBox.Controls.Add(this.finalStateLabel);
+            this.DFAParametersGroupBox.Controls.Add(this.initialStateTextBox);
+            this.DFAParametersGroupBox.Controls.Add(this.initialStateLabel);
+            this.DFAParametersGroupBox.Controls.Add(this.alphabetTextBox);
+            this.DFAParametersGroupBox.Controls.Add(this.alphabetLabel);
+            this.DFAParametersGroupBox.Controls.Add(this.numberOfStatesTextBox);
+            this.DFAParametersGroupBox.Controls.Add(this.numberOfStatesLabel);
+            this.DFAParametersGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.DFAParametersGroupBox.Location = new System.Drawing.Point(12, 12);
+            this.DFAParametersGroupBox.Name = "DFAParametersGroupBox";
+            this.DFAParametersGroupBox.Size = new System.Drawing.Size(243, 477);
+            this.DFAParametersGroupBox.TabIndex = 0;
+            this.DFAParametersGroupBox.TabStop = false;
+            this.DFAParametersGroupBox.Text = "DFA Parameters";
             // 
             // transitionTextBox
             // 
@@ -228,18 +228,19 @@
             this.resultLabel.Size = new System.Drawing.Size(0, 20);
             this.resultLabel.TabIndex = 0;
             // 
-            // NFAtesterForm
+            // DFAtesterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(518, 501);
             this.Controls.Add(this.ResultGroupBox);
             this.Controls.Add(this.TestInputGroupBox);
-            this.Controls.Add(this.NFAParametersGroupBox);
-            this.Name = "NFAtesterForm";
-            this.Text = "NFAtester";
-            this.NFAParametersGroupBox.ResumeLayout(false);
-            this.NFAParametersGroupBox.PerformLayout();
+            this.Controls.Add(this.DFAParametersGroupBox);
+            this.Name = "DFAtesterForm";
+            this.Text = "DFAtester";
+            this.Load += new System.EventHandler(this.DFAtesterForm_Load);
+            this.DFAParametersGroupBox.ResumeLayout(false);
+            this.DFAParametersGroupBox.PerformLayout();
             this.TestInputGroupBox.ResumeLayout(false);
             this.TestInputGroupBox.PerformLayout();
             this.ResultGroupBox.ResumeLayout(false);
@@ -250,7 +251,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox NFAParametersGroupBox;
+        private System.Windows.Forms.GroupBox DFAParametersGroupBox;
         private System.Windows.Forms.TextBox transitionTextBox;
         private System.Windows.Forms.Label transitionLabel;
         private System.Windows.Forms.TextBox finalStateTextBox;

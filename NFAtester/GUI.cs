@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace NFAtester
 {
-    public partial class NFAtesterForm : Form
+    public partial class DFAtesterForm : Form
     {
-        public NFAtesterForm()
+        public DFAtesterForm()
         {
             InitializeComponent();
         }
@@ -74,16 +74,16 @@ namespace NFAtester
 
             #endregion
 
-            #region Initialize and run NFA Builder
+            #region Initialize and run DFA Builder
 
-            NFABuilder nfa = new NFABuilder(
+            DFABuilder dfa = new DFABuilder(
                 numberOfStates,
                 alphabet,
                 initialState,
                 finalState,
                 transitions);
 
-            bool flag = nfa.Test(testInput);
+            bool flag = dfa.Test(testInput);
 
             // Display result
             if(flag)
@@ -97,6 +97,11 @@ namespace NFAtester
             }
 
             #endregion
+        }
+
+        private void DFAtesterForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

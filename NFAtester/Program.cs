@@ -13,7 +13,7 @@ namespace NFAtester
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NFAtesterForm());
+            Application.Run(new DFAtesterForm());
         }
     }
 }

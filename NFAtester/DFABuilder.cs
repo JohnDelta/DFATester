@@ -3,19 +3,19 @@ using System.Collections.Generic;
 
 namespace NFAtester
 {
-    class NFABuilder
+    class DFABuilder
     {
-        // Given by user - NFA parameters
+        // Given by user - DFA parameters
         private int numberOfStates;
         private List<string> alphabet;
         private string initialState;
         private List<string> finalState;
         private List<Transition> transitions;
 
-        // Keep current state of NFA
+        // Keep current state of DFA
         private string currentState;
 
-        public NFABuilder(int numberOfStates, List<string> alphabet, String initialState, List<string> finalState, List<Transition> transitions)
+        public DFABuilder(int numberOfStates, List<string> alphabet, String initialState, List<string> finalState, List<Transition> transitions)
         {
             this.numberOfStates = numberOfStates;
             this.alphabet = alphabet;
