@@ -1,3 +1,3 @@
-# NFATester
+# DFATester
 
-Non-finite automata tester
+Deterministic finite state automaton tester
